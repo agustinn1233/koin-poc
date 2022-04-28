@@ -11,7 +11,13 @@ import org.koin.androidx.viewmodel.ext.android.viewModel
 import org.koin.core.context.GlobalContext.startKoin
 import org.koin.core.logger.Level
 
+/**
+ * Main activity
+ *
+ * @constructor Create empty Main activity
+ */
 class MainActivity : AppCompatActivity() {
+    // Using viewModel by Koin.
     private val viewModel: MainViewModel by viewModel()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

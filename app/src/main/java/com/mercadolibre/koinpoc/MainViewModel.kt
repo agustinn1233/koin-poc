@@ -4,6 +4,12 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
+/**
+ * Main view model
+ *
+ * @property cryptocurrencyRepository
+ * @constructor Create empty Main view model
+ */
 class MainViewModel constructor(
     private val cryptocurrencyRepository: CryptocurrencyRepository,
 ) : ViewModel() {
